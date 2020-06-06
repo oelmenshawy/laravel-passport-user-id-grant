@@ -1,0 +1,41 @@
+{
+    "name": "oelmenshawy/laravel-passport-user-id-grant",
+    "description": "User Id Grant for Laravel Passport",
+    "keywords": ["laravel", "passport", "user id", "network", "grant", "oauth"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Osama Elmenshawy",
+            "email": "osama.almenshawy@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "laravel/passport": "^6.0|^7.0|^8.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Oelmenshawy\\UserIdGrant\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Oelmenshawy\\UserIdGrant\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit --colors=always"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Oelmenshawy\\UserIdGrant\\Providers\\UserIdGrantServiceProvider"
+            ]
+        }
+    }
+}

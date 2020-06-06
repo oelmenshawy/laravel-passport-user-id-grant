@@ -1,0 +1,6 @@
+site:
+  show: true
+  title: 'Laravel Passport User Id Grant'
+  description: 'API authentication via user id for your Laravel application'
+  package_repository: 'packagist'
+  package_name: 'oelmenshawy/laravel-passport-user-id-grant'
